@@ -1,5 +1,7 @@
 # talk-with-linux
 This repository aims to explore all the functionality of linux with simple programs. Lets talk with the linux !
+> Talk is cheap, just show the code - Linus Torvalds
+
 
 # Install linux headers
 Since we are talking to the linux, we need to know its language. So, lets install their headers first.
