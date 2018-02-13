@@ -30,7 +30,7 @@ void my_timer_callback( unsigned long data )
   
 }
 
-static int __init init_tasklet(void)
+static int __init init_soft_timer(void)
 {
   int ret = 0;
   printk("Soft timer init done.\n");
@@ -47,7 +47,7 @@ static int __init init_tasklet(void)
   return 0;
 }
  
-static void __exit cleanup_tasklet(void)
+static void __exit cleanup_soft_timer(void)
 {
   int ret;
 
@@ -58,5 +58,5 @@ static void __exit cleanup_tasklet(void)
   printk("Timer module removed\n");
 }
 
-module_init(init_tasklet);
-module_exit(cleanup_tasklet);
+module_init(init_soft_timer);
+module_exit(cleanup_soft_timer);
